@@ -59,7 +59,7 @@ switch (looks) {
     case 12:
         console.log("Rarer than francium");
     default:
-        alert("and... you've broken the scale");
+        console.log("and you've broken the scale");
         break
 
     
@@ -92,6 +92,67 @@ function funcClick() {
     var calculator= document.getElementById("message");
     calculator.innerHTML = cost / people;
 }
+//function declaration (can be called before declaration)
+//function (verb function name) (argument) {
+//    statement
+//    return expression 
+//}
+function pet(animal) {
+    return ("my pet is a " + animal);
+}
+
+let pet2 = pet("goat") //declare a variable 
+console.log(pet2);
+
+//function expression
+//only called when reached within control flow
+let pet3 = function(animal) {
+    return ('my pet is a, ${animal} ')
+};
+
+console.log(pet3("cat"));
+
+//function expression condensed + arrows
+// even more condensed form (declare variable and create function and return value same line (implement arrows)
+let favorite_animal = (animal) => 'my pet is a ' + animal; //turn favorite animal into a function (parenthesses msut be present for function expressions)
+console.log(favorite_animal('dog'));
 
 
+let age = prompt("What is your age?", 18);
 
+let welcome;
+
+if (age < 18) {
+
+  welcome = function() {
+    alert("Hello!");
+  };
+
+} else {
+
+  welcome = function() {
+    alert("Greetings!");
+  };
+
+}
+
+welcome(); // ok now
+
+
+// understand the problem (problem statement)
+
+    // write a program that that increments from 1 to N every time a number if divisible by 3 output fizz
+    // every time it's divisible by 5 output buzz
+    //every time it's divisible by 3 and 5 write fizz buzz
+
+// (for web development) per page, study competition for aesthetics of website
+    // flow chart for structure and functionality
+    // list of desired inputs and outputs
+
+// pseudocode
+    //for i in range(1, N):
+        // if i % 3 == 0: return "fizz"
+        // elif i % 5 == 0 return "buzz"
+        // elif i % 5 and i % 3 return "fizz buzz"
+
+// write code
