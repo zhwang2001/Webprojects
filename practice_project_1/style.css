@@ -1,0 +1,40 @@
+* {
+    font-family: sans-serif;
+}
+
+html {
+    margin: 0px 30px 0px 30px;
+}
+
+nav {
+    min-width: 800px;
+    border-bottom: 2px solid black;
+    /* use for box shadow insetting */
+
+    /*box-shadow: 11px 14px 5px 0px grey,
+    inset 0px 20px 7px 0px grey;*/
+}
+
+a img {
+    max-height: 100px;
+    max-width: 80px;
+    min-width: 80px;
+    min-height: 100px;
+}
+
+nav ul a:hover {
+    color: blue
+}
+
+
+nav ul {
+    display: flex;
+    float: right;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    margin: 10px;
+}
