@@ -1,8 +1,12 @@
 .App {
   background-color: #282c34;
+  height: 100vh;
 }
 
 .App-header {
-  align-items: center;
   display: flex;
+}
+
+.Listings {
+  width: 60%;
 }
