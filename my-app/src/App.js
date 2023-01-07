@@ -3,6 +3,63 @@ import Navbar from './Navbar';
 import Listing from './Listing';
 
 function App() {
+  const keyinfo = [
+    {
+      profile: "1",
+      listing_img: "?",
+      price: "800",
+      address: "3452 winchester drive",
+      num_roomates: "2",
+      num_bedrooms: "4",
+      num_bathrooms: "6",
+    },
+    {
+      profile: "2",
+      listing_img: "?",
+      price: "645",
+      address: "2451 sherway gardens",
+      num_roomates: "4",
+      num_bedrooms: "3",
+      num_bathrooms: "2",
+    },
+    {
+      profile: "3",
+      listing_img: "?",
+      price: "1100",
+      address: "300 21 west street",
+      num_roomates: "2",
+      num_bedrooms: "4",
+      num_bathrooms: "2",
+    },
+    {
+      profile: "4",
+      listing_img: "?",
+      price: "1100",
+      address: "300 21 west street",
+      num_roomates: "2",
+      num_bedrooms: "4",
+      num_bathrooms: "2",
+    },
+    {
+      profile: "5",
+      listing_img: "?",
+      price: "1100",
+      address: "300 21 west street",
+      num_roomates: "2",
+      num_bedrooms: "4",
+      num_bathrooms: "2",
+    },
+    {
+      profile: "6",
+      listing_img: "?",
+      price: "1100",
+      address: "300 21 west street",
+      num_roomates: "2",
+      num_bedrooms: "4",
+      num_bathrooms: "2",
+    }
+  ]
+
   return (
     <div className="App">
       <header className="App-header">
@@ -10,12 +67,9 @@ function App() {
       </header>
       <body>
         <section className="Listings">
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
-          <Listing />
+          {keyinfo.map(info => (
+            <Listing key={info.profile} {...info} />
+          ))}
         </section>
         <section className="Map">
         </section>

@@ -1,6 +1,7 @@
 .App {
   background-color: #282c34;
   height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-header {

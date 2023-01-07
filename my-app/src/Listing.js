@@ -1,7 +1,8 @@
 import './Listing.css';
 import apartment from './Assets/apartment1.jfif'
 
-function Listing() {
+function Listing(keyinfo) {
+
   return (
     <div className="Listing">
 
@@ -12,16 +13,17 @@ function Listing() {
 
       <section className="Keyinfo">
         <div className="Keyinfo-row1">
-          <h3 id="Price">$900</h3>
+          <h3 id="Price">${keyinfo.price}</h3>
           <h4 id="Divider">|</h4>
-          <h4 id="Address">2451 Sherway Gardens</h4>
+          <h4 id="Address">{keyinfo.address}</h4>
         </div>
         <div className="Keyinfo-row2">
-          <h5 id="Roomates">3 roomates</h5>
+          {/* determines if the listing has roomataes already */}
+          <h5 id="Roomates">{keyinfo.num_roomates > 0 ? `Roomates: ${keyinfo.num_roomates}` : "No Roomates"}</h5>
           <h5 id="Divider">|</h5>
-          <h5 id="Bed">1 Bed</h5>
+          <h5 id="Bed">Bedrooms: {keyinfo.num_bedrooms}</h5>
           <h5 id="Divider">|</h5>
-          <h5 id="Bath">1 Bath</h5>
+          <h5 id="Bath">Bathrooms: {keyinfo.num_bathrooms}</h5>
         </div>
       </section>
 
