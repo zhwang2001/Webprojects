@@ -49,15 +49,6 @@ function App() {
       num_bedrooms: "4",
       num_bathrooms: "2",
     },
-    {
-      profile: "6",
-      listing_img: "?",
-      price: "1100",
-      address: "300 21 west street",
-      num_roomates: "2",
-      num_bedrooms: "4",
-      num_bathrooms: "2",
-    }
   ]
 
   return (
@@ -67,15 +58,14 @@ function App() {
       </header>
       <body>
         <section className="Listings">
-          {keyinfo.map(info => (
-            <Listing key={info.profile} {...info} />
+          {keyinfo.map((info, i) => (
+            <Listing key={i} {...info} />
           ))}
         </section>
         <section className="Map">
         </section>
       </body>
     </div>
-
   );
 }
 

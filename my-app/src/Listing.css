@@ -22,11 +22,11 @@
 }
 
 .Profile-Pic {
-  background-color: #282c34;
-  border: 2px solid white;
-  border-radius: 35px;
+  background-color: #281c34;
+  border: 1px solid white;
+  border-radius: 34px;
   position: absolute;
-  width: 70px;
+  width: 69px;
   height: 70px;
   margin: 25px;
 }
