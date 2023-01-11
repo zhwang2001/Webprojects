@@ -1,6 +1,8 @@
 import './App.css';
-import Navbar from './Navbar';
-import Listing from './Listing';
+import Navbar from './Components/Navbar';
+import Listing from './Components/Listing';
+import Like from './Components/Like';
+import Rating from './Components/Rating';
 
 function App() {
   const keyinfo = [
@@ -51,6 +53,7 @@ function App() {
     },
   ]
 
+
   return (
     <div className="App">
       <header className="App-header">
@@ -63,6 +66,8 @@ function App() {
           ))}
         </section>
         <section className="Map">
+          <Like />
+          <Rating />
         </section>
       </body>
     </div>
