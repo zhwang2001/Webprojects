@@ -12,6 +12,7 @@ nav {
   border-bottom: 2px solid black;
   min-width: 900px;
   justify-content: flex-end;
+  background-color: white;
   /* use for box shadow insetting */
 
   /*box-shadow: 11px 14px 5px 0px grey,
