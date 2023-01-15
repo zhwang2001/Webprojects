@@ -1,0 +1,19 @@
+/* Rating Component */
+input[name="radioButton"] {
+  display: none;
+}
+
+
+/* Like Component*/
+.Like {
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.starRating {
+  cursor: pointer;
+}

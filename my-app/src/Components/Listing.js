@@ -1,5 +1,5 @@
 import './Listing.css';
-import apartment from './Assets/apartment1.jfif'
+import apartment from './Assets/apartment.jpg'
 
 function Listing(keyinfo) {
 

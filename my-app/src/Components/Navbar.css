@@ -22,7 +22,7 @@ nav {
 nav ul a {
   text-decoration: none;
   float: right;
-  color: white;
+  color: black;
   flex: 1;
   margin: 20px;
 }

@@ -1,5 +1,5 @@
 .App {
-  background-color: #282c34;
+  background-color: white;
   height: 100vh;
 }
 
@@ -9,5 +9,6 @@
 }
 
 .Listings {
-  width: 60%;
+  margin: 10px;
+  width: 80%;
 }
