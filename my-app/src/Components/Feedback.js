@@ -16,13 +16,8 @@ export function Rating() {
         const width = 20; //size starts at 20
         return (
           <label className="starRating">
-            <input
-              onClick={() => setRating(index)} //event listener
-              type="radio"
-              name="radioButton"
-              value={index}
-            />
             <FaStar
+              onClick={() => setRating(index)} //event listener
               className="star"
               onMouseEnter={() => setHover(index)} //event listener
               onMouseLeave={() => setHover(null)} //event listener

@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import Post from './Components/Post';
+import Scroll from './Components/Post';
 import { Rating } from './Components/Feedback';
 import { Like } from './Components/Feedback';
 
@@ -9,10 +10,6 @@ import Apartment2 from "./Components/Assets/apartment.jpg"
 import Apartment from "./Components/Assets/apartment2.jpg"
 import Room from "./Components/Assets/living_space.jpg"
 import Room2 from "./Components/Assets/living_space2.jpg"
-import Avatar1 from "./Components/Assets/avatar1.jpg"
-import Avatar2 from "./Components/Assets/avatar2.jpg"
-import Avatar3 from "./Components/Assets/avatar3.jpg"
-import Avatar4 from "./Components/Assets/avatar4.jpg"
 
 function App() {
   const keyinfo = [
@@ -29,8 +26,7 @@ function App() {
         "Pool",
       ],
       date_available: "Jan 8th 2023",
-      listing_img: [Apartment,Apartment2,Room, Room2],
-      avatar_img: Avatar1,
+      listing_img: [Apartment, Apartment2, Room, Room2],
     },
     {
       profile: "2",
@@ -47,8 +43,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "3",
@@ -65,8 +60,7 @@ function App() {
         "Laundry",
         "Parking",
       ],
-      listing_img: [Room, Apartment2,Apartment, Room2],
-      avatar_img: Avatar3,
+      listing_img: [Room, Apartment2, Apartment, Room2],
     },
     {
       profile: "4",
@@ -78,15 +72,17 @@ function App() {
       num_bathrooms: "2",
       tags: [
         "fitness roomates",
-        "Outdoor Pool",
         "Games Room",
         "Party Room",
         "Party Room",
         "Party Room",
+        "Party Room",
+        "Outdoor Pool",
+        "Party Room",
+        "Party Room",
       ],
       date_available: "Feb 29th 2023",
-      listing_img: [Room2, Apartment2,Apartment, Room],
-      avatar_img: Avatar4,
+      listing_img: [Room2, Apartment2, Apartment, Room],
 
     },
     {
@@ -104,8 +100,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "2",
@@ -122,8 +117,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "2",
@@ -140,8 +134,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "2",
@@ -158,8 +151,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "2",
@@ -176,8 +168,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "2",
@@ -194,8 +185,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "2",
@@ -212,8 +202,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "2",
@@ -230,8 +219,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "2",
@@ -248,8 +236,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "2",
@@ -266,8 +253,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "2",
@@ -284,8 +270,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
     {
       profile: "2",
@@ -302,8 +287,7 @@ function App() {
         "Rooftop lounge",
       ],
       date_available: "May 9th 2024",
-      listing_img: [Apartment2,Apartment,Room, Room2],
-      avatar_img: Avatar2,
+      listing_img: [Apartment2, Apartment, Room, Room2],
     },
   ]
 

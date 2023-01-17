@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  font-family: Poppins;
+}
+
 .App {
   background-color: white;
   height: 100vh;
   zoom: 0.8;
+  justify-items: center;
 }
 
 
@@ -10,6 +17,9 @@
 }
 
 .Listings {
-  margin: 10px;
-  width: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }

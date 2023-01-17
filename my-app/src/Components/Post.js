@@ -3,6 +3,7 @@ import { BsBook, BsBookmarks } from 'react-icons/bs'
 import { BsBookmarksFill } from 'react-icons/bs'
 import { IoIosArrowDroprightCircle } from 'react-icons/io'
 import { IoIosArrowDropleftCircle } from 'react-icons/io'
+import { VscCircleLargeFilled } from 'react-icons/vsc'
 import { useState } from 'react'
 
 export function Bookmark() {
@@ -35,32 +36,48 @@ export default function Post(info) {
         <div className="image">
           <img src={info.listing_img[current]} alt="A Listing" />
           <div id="functionality">
-            <div id="profile">
-              <img src={info.avatar_img} alt="A Listing" />
-            </div>
             <div id="save" >
               <Bookmark />
             </div>
 
             <label id="back">
-              <button 
-               id = "backButton"
-               type="button" 
-               onClick={(
+              <button
+                id="backButton"
+                type="button"
+                onClick={(
                 ) => setCurrent(count => (count - 1 === -1) ? info.listing_img.length - 1 : count - 1)}>
               </button>
-                < IoIosArrowDropleftCircle size={30}/>
+              < IoIosArrowDropleftCircle size={30} color={"white"} />
             </label>
-
             <label id="forward" >
-              <button 
-               id = "forwardButton"
-                type="button" 
+              <button
+                id="forwardButton"
+                type="button"
                 onClick={(
-                  ) => setCurrent(count => (count + 1 === info.listing_img.length) ? 0 : count + 1)}>
+                ) => setCurrent(count => (count + 1 === info.listing_img.length) ? 0 : count + 1)}>
               </button>
-              < IoIosArrowDroprightCircle size={30}/>
-              </label>
+              < IoIosArrowDroprightCircle size={30} color={"white"} />
+            </label>
+            <label className="slide">
+              {[...Array(info.listing_img.length)].map((slide, i) => {
+                return (
+                  <>
+                    {/* why doesn't this code work??????
+                <input type="button"
+                  value={i}
+                  onCLick={() => setCurrent(i)} />
+                */}
+                    < VscCircleLargeFilled
+                      className="dots"
+                      size={current === i ? 12 : 9}
+                      onClick={() => setCurrent(i)}
+                      color={current === i ? 'aqua' : 'white'}
+                    />
+                  </>
+                )
+              })}
+
+            </label>
 
           </div>
         </div>
