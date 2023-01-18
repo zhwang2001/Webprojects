@@ -8,18 +8,23 @@ import { useState } from 'react'
 
 export function Bookmark() {
 
-  const [fill, setFill] = useState(() => count()); //save button state
+  const [fill, setFill] = useState(() => count()); //save button state (avoids being re-rendered every time it's called, only renders first time)
 
   function count(number = 1) {
     return (number++);
+ 
+  }
+  
+  function handleSaveClick () {
+      return setFill(() => fill + 1)
+
   }
 
   return (
     <label>
       <input type="check"
         id="bookmark"
-        onClick={() =>
-          setFill(() => fill + 1)}>
+        onClick={handleSaveClick}>
       </input>
       {fill % 2 === 0 ? <BsBookmarksFill size={20} /> : <BsBookmarks size={20} />}
     </label>
@@ -29,6 +34,15 @@ export function Bookmark() {
 export default function Post(info) {
 
   const [current, setCurrent] = useState(0); //image scroll state
+
+  function handleForwardClick () {
+      return setCurrent(count => (count + 1 === info.listing_img.length) ? 0: count + 1)
+  }
+
+  function handleBackwardClick () {
+      return setCurrent(count => (count - 1 === -1) ? info.listing_img.length - 1: count - 1)
+
+  }
 
   return (
     <div className="listing">
@@ -44,8 +58,7 @@ export default function Post(info) {
               <button
                 id="backButton"
                 type="button"
-                onClick={(
-                ) => setCurrent(count => (count - 1 === -1) ? info.listing_img.length - 1 : count - 1)}>
+                onClick={handleBackwardClick} >
               </button>
               < IoIosArrowDropleftCircle size={30} color={"white"} />
             </label>
@@ -53,8 +66,7 @@ export default function Post(info) {
               <button
                 id="forwardButton"
                 type="button"
-                onClick={(
-                ) => setCurrent(count => (count + 1 === info.listing_img.length) ? 0 : count + 1)}>
+                onClick={handleForwardClick} >
               </button>
               < IoIosArrowDroprightCircle size={30} color={"white"} />
             </label>
