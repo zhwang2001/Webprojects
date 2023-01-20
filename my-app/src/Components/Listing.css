@@ -47,10 +47,3 @@
 .Listing:hover {
   box-shadow: 0px 0px 5px 5px black;
 }
-
-.Map {
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around
-}

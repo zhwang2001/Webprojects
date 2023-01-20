@@ -3,7 +3,7 @@ import { BsBook, BsBookmarks } from 'react-icons/bs'
 import { BsBookmarksFill } from 'react-icons/bs'
 import { IoIosArrowDroprightCircle } from 'react-icons/io'
 import { IoIosArrowDropleftCircle } from 'react-icons/io'
-import { VscCircleLargeFilled } from 'react-icons/vsc'
+import { BsFillCircleFill } from 'react-icons/bs'
 import { useState } from 'react'
 
 export function Bookmark() {
@@ -79,7 +79,7 @@ export default function Post(info) {
                   value={i}
                   onCLick={() => setCurrent(i)} />
                 */}
-                    < VscCircleLargeFilled
+                    < BsFillCircleFill 
                       className="dots"
                       size={current === i ? 12 : 9}
                       onClick={() => setCurrent(i)}
